@@ -135,7 +135,7 @@ func main() {
 	inputFlags = append(inputFlags, countPtr)
 	inputFlags = append(inputFlags, invertPtr)
 
-	if len(files)|len(regex) <= 0 {
+	if len(files) <= 0 || len(regex) <= 0 {
 		fmt.Println("Usage: go-grep [OPTION]... PATTERN [FILE]...\nTry 'gogrep -h' for more information.\n")
 		return
 	}
